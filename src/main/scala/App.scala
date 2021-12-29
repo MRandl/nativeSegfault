@@ -3,7 +3,7 @@ object App {
   import scalanative.unsigned.given
 
   @main def main() = 
-    val limit = 1000
+    val limit = 12
     Zone { implicit allocator =>
       val ptr = alloc[BigInt](limit.toULong)
       for i <- (0 until limit) do {
